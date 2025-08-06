@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  
+
+ 
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 
@@ -19,18 +23,27 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Faça login para acesar sua conta. Caso você não possua uma conta, pode cadastra-se no nosso site</p>
-                <form action="Login.php" method="post"></form>
+                <form action="Login.php" method="post" autocomplete="on">
 
-                <div class="campo">
-                    <span class="material-symbols-outlined"> home</span>
-                    <input type="email" name="login" id="ilogin" placeholder="Seu E-mail.">
+                    <div class="campo">
+                    <span class="material-symbols-outlined">person</span>
+                 <input type="email" name="login" id="ilogin" placeholder="Seu E-mail." autocomplete="email" required maxlength="50">
                     <label for="ilogin">Login:</label>
 
                 </div>
                 <div class="campo">
-                    <input type="password" name="senha" id="isenha" placeholder="Sua Senha.">
+                    <span class="material-symbols-outlined">password</span>
+                    <input type="password" name="senha" id="isenha" placeholder="Sua Senha." autocomplete="current-password" required minlength="8" maxlength="25"> 
                     <label for="isenha">Senha:</label>
                 </div>
+
+                <input type="submit" value="entrar">
+                <a href="esqueci.html">Esqueci a senha <i> <span class="material-symbols-outlined">
+                mail </span></i></a>
+
+                </form>
+
+               
 
 
             </div>
