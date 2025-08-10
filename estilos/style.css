@@ -21,7 +21,7 @@ mais escuro #403030
 
 
 body, html{
-    background-color: #0d0d0d;
+    background-color: #000000;
     height: 100vh;
     width: 100vw;
 
@@ -31,19 +31,23 @@ main{
     position: relative;
     width: 100vw;
     height: 100vh;
+    
 
 }
 section#Login{
+    padding-top: 10px;
     position: absolute;
+    color: #ffffff;
     top:50%;
     left: 50%;
     overflow: hidden;;
-    background-color: #804040;
+    background-color: #000000;
     width: 250px;
-    height: 500px;
+    height: 620px;
     border-radius: 20px;
     box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.534);
     transform: translate(-50%, -50%);
+    
 
 }
 section#Login > div#imagem{
@@ -52,27 +56,27 @@ section#Login > div#imagem{
     background-size: cover;
     height: 200px;
     background-position: right;
-
     transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
     transition-timing-function: ease-in-out;
-
-
-
 }
 
 section#Login > div#formulario{
-
+    box-shadow: 10px 10px 80px 40px rgb(0, 0, 0);
+    padding-top: 10px;
     display: block;
-    padding: 10px;
     margin: 5px;
 }
 
 div#formulario > h1{
     text-align: center;
     margin-bottom: 10px;
+    padding-bottom: 30px;
+    font-size: 2em;
+    
+
+
+    
 }
-
-
 
 div.campo > label{
     display: none;
@@ -86,6 +90,7 @@ form > div.campo{
     border-radius: 8px;
     margin: 5px 0px;
 }
+
 form > div.campo:hover{
     border: 2px solid #c7c7c7;
     border-image: linear-gradient(90deg, 255, 255, 255, 0.534, #b8b8b8);
@@ -116,14 +121,13 @@ div.campo > input:focus-within{
     color: rgb(255, 255, 255);
 }
 
-
 form > input[type=submit]{
     display: block;
     font-size: 1em;
     width: 100%;
     height: 50px;
     background: linear-gradient(90deg, #3d3d3d, #ffffff); 
-    color: black;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     margin-top: 60px;
   
@@ -149,10 +153,8 @@ form > a.botao{
     margin-top: 10px;
     background-color: transparent;
     color: #c7c6c6;
-    
-
-
 }
+
 form > a.botao:hover{
     background-color: transparent;
     color: white;
