@@ -15,9 +15,13 @@ mais escuro #403030
     margin: 0px;
     box-sizing: border-box;
 }
+.campo:first-of-type {
+    margin-bottom: 50px; /* só o primeiro campo (email) */
+}
+
 
 body, html{
-    background-color: #722F37;
+    background-color: #0d0d0d;
     height: 100vh;
     width: 100vw;
 
@@ -33,24 +37,23 @@ section#Login{
     position: absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;;
-
     background-color: #804040;
     width: 250px;
-    height: 650px;
+    height: 500px;
     border-radius: 20px;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.534);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.534);
+    transform: translate(-50%, -50%);
 
 }
 section#Login > div#imagem{
     display: block;
-    background: url(..//imagens/pexels-wangming-photo-115695-354941.jpg) no-repeat;;
+    background: url(..//imagens/pexels-pixabay-53153.jpg) no-repeat;;
     background-size: cover;
     height: 200px;
-    background-position: left;
+    background-position: right;
 
-    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    transition: width 1.5s ease-in-out, height 1.5s ease-in-out;
     transition-timing-function: ease-in-out;
 
 
@@ -69,8 +72,97 @@ div#formulario > h1{
     margin-bottom: 10px;
 }
 
-div#formulario > p {
+
+
+div.campo > label{
+    display: none;
+}
+
+form > div.campo{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: block;
+    height: 50px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+form > div.campo:hover{
+    border: 2px solid #c7c7c7;
+    border-image: linear-gradient(90deg, 255, 255, 255, 0.534, #b8b8b8);
+    border-image-slice:1;
+    box-shadow: 0px 0px 50px rgba(228, 228, 228, 0.6);
+}
+
+div.campo > span{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+
+div.campo > input{
+    background-color: #363636;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    transform: translateY(-9px);
+}
+
+div.campo > input:focus-within{
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(90deg, #3d3d3d, #ffffff); 
+    color: black;
+    border-radius: 5px;
+    margin-top: 60px;
+  
+}
+
+form > input[type=submit]:hover{
+   background: linear-gradient(90deg, #b8b8b8, #b8b8b8); 
+    color: rgb(252, 252, 252);
+    cursor: pointer;
+     border: 2px solid #c7c7c7;
+    border-image: linear-gradient(90deg, 255, 255, 255, 0.534, #b8b8b8);
+    border-image-slice:1;
+    box-shadow: 0px 0px 50px rgba(228, 228, 228, 0.6);
+}
+
+form > a.botao{
+    display: block;
+    text-align: right;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #c7c6c6;
+    
+
+
+}
+form > a.botao:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form > a.botao > i{
     font-size: 0.8em;
 }
+
   
   
