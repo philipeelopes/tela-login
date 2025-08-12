@@ -46,8 +46,40 @@
                
 
 
+
             </div>
         </section>
     </main>
+
+
+ 
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const titulo = document.getElementById("login");
+    const textoOriginal = titulo.textContent;
+
+    function animarTitulo() {
+        titulo.textContent = ""; 
+        textoOriginal.split("").forEach((letra, i) => {
+            const span = document.createElement("span");
+            span.className = "char";
+            span.textContent = letra;
+            span.style.animationDelay = (i * 0.06) + "s";
+            titulo.appendChild(span);
+        });
+    }
+
+    
+    animarTitulo();
+
+  
+    setInterval(animarTitulo, 5000);
+});
+</script>
+
+
+
+
+
 </body>
 </html>
