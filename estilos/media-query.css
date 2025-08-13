@@ -11,6 +11,7 @@
         width: 90vw;
         background-color: #000000;
         height: 500px;
+        flex-direction: row;
         color: white;
         
     }
@@ -71,6 +72,7 @@
      body{
          background-image: linear-gradient(to top, rgb(46, 46, 46), black );
         background-size: cover;
+        
 
     }
 
@@ -80,6 +82,7 @@
          height: 600px;
          padding-bottom: 40px;
          color: #ffffff;
+         
     }
 
     section#Login  h1{
@@ -92,13 +95,14 @@
 
 
     section#Login > div#imagem{
-        background-image: url(../imagens/pexels-pixabay-53153.jpg);
+        background-image: url(../imagens/pexels-wangming-photo-115695-354941.jpg);
         float: right;
         width: 50%;
         height: 100%;
 
     }
     section#Login > div#formulario{
+        
         float: left;
         width: 48%;
         
@@ -110,8 +114,6 @@ div#formulario > h1{
    justify-content: center;
    
 }
-
-
 
 
 /* Efeito para o título no desktop */
