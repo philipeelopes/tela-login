@@ -3,12 +3,12 @@
 @media screen and (min-width: 768px) and (max-height: 1024px) {
         /* tablet*/
     body{
-        background-image: linear-gradient(to top, #0d0d0d, #1a1a1a );
+        background-image: linear-gradient(to top, #1f1f1f , #1f1f1f );
         
     }
 
     section#Login{
-        width: 90vw;
+        width: 100vw;
         background-color: #000000;
         height: 500px;
         flex-direction: row;
@@ -17,7 +17,7 @@
     }
 
     section#Login > div#imagem{
-        background-image: url(../imagens/nova\ lua.jpg);
+        background-image: url(../imagens/pexels-yuraforrat-11950372.jpg);
        float: left;
        width: 30%;
        height: 100%;
@@ -70,7 +70,7 @@
         /* desktop*/
 
      body{
-         background-image: linear-gradient(to top, rgb(46, 46, 46), black );
+         background-image: linear-gradient(to top, #1f1f1f  , #1f1f1f   );
         background-size: cover;
         
 
@@ -79,9 +79,8 @@
     section#Login{
         width: 1500px;
          background-color: rgb(0, 0, 0);
-         height: 600px;
-         padding-bottom: 40px;
-         color: #ffffff;
+         height: 600px; 
+         color: rgb(255, 255, 255);
          
     }
 
@@ -95,7 +94,7 @@
 
 
     section#Login > div#imagem{
-        background-image: url(../imagens/pexels-wangming-photo-115695-354941.jpg);
+        background-image: url(../imagens/pexels-yuraforrat-11950372.jpg);
         float: right;
         width: 50%;
         height: 100%;
